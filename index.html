@@ -9,11 +9,31 @@
 </head>
 
 <body>
-  <div id="app">
-    <div class="w-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
+  <div class="relative" id="app">
+    <div class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-black text-white font-semibold">
+      <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
+        Code by LN
+      </a>
+      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/sneaker-box-in-cart-animation">
+        GitHub
+      </a>
+      <a class="underline underline-offset-2"
+        href="https://www.figma.com/file/L7FEVXNUbiSQJhSndzcyJJ/New-Balance-Micro-Animations-(Community)?type=design&node-id=2%3A238&mode=design&t=uDwaZnbUDZOIzRHd-1">
+        Figma
+      </a>
+    </div>
+    <div class="w-full h-screen flex flex-col items-center justify-center gap-8 p-4 bg-black/50">
+      <div class="w-[500px] h-[500px] rounded-xl bg-white overflow-hidden flex flex-col items-center justify-end py-24">
+        <img class="box-top -translate-y-[100px] z-30" src="/box-top.svg" alt="box" />
+        <div class="sneakers -translate-y-[300px]">
+          <img class="sneaker sneaker-1 rotate-12 z-10" src="/sneaker.svg" alt="sneaker" />
+          <img class="sneaker sneaker-2 rotate-45 z-10" src="/sneaker.svg" alt="sneaker" />
+        </div>
+        <img class="box-body -translate-x-[500px] z-20 bg-white" src="/box-body.svg" alt="box" />
+      </div>
+      <button class="reload bg-white text-black w-40 p-2 rounded-full font-semibold">
+        Reload
+      </button>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
